@@ -1,0 +1,54 @@
+<!--
+
+Author:  Diya Patel
+Class:   Web & Distributed Programming
+Project: Map Mania v2
+Credits: Map Mania lite
+
+-->
+<!doctype html>
+<lang html="en">
+
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Simple Map</title>
+      
+      <script src ="map.js"></script>
+      <style>
+
+        #ID {
+        height: 100%;
+        width:100%;
+        }
+      
+      /*  Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        } 
+      </style>
+
+  </head>
+  
+  <body onload="initApp()">
+    
+    <h1>MAP MANIAv2- FAV Places to Visit GAME</h1>
+    <button type="button" onclick="alert('Welcome to MAP MANIA. There are 10 locations that you have to find in an order. Score = 10 means you have tenth location. 1 means you have First location, 2 means you have found 2nd location not two location. The places must be found in an order. (Chicago, Jaipur, IndianaPolis, LA, DC, NY, Vadodra, NJ, MexicoCity, Hawaii.To win it, just click on anywhere on map. Click ok to close this!')">Getting Started</button>
+           
+        Hint: <input id="hint-id" type="text" value="" size="120" disabled><br><br>
+        score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
+
+    <div id="ID"></div>
+    <div id="zoom"></div>
+    
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjtErQru5SI88Orp0xXLvR4Yq1zJ8OgQ4&callback=initMap&v=weekly"
+      async defer></script>
+    
+
+</body>
+    
